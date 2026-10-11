@@ -1,0 +1,12 @@
+-- dbt_project.yml (stub) — adopt when ready to run models as a dbt project.
+-- Until then, models/ and reports/ are plain SQL applied to the warehouse schema.
+name: livestock_analytics
+version: "1.0.0"
+config-version: 2
+profile: livestock_analytics
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+models:
+  livestock_analytics:
+    +materialized: view

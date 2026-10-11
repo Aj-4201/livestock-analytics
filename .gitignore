@@ -1,0 +1,8 @@
+.env
+.env.*
+dbt_packages/
+target/
+logs/
+.DS_Store
+.idea/
+.vscode/
